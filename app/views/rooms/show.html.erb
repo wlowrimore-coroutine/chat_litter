@@ -7,11 +7,11 @@
 
     <%= render @room %>
 
-    <%= link_to 'Edit this room', edit_room_path(@room), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'edit room', edit_room_path(@room), class: "tracking-wide inline-block mr-6 font-medium lowercase text-[#3185fc] hover:cursor-pointer hover:underline hover:text-[#36393b]" %>
     <div class="inline-block ml-2">
-      <%= button_to 'Destroy this room', room_path(@room), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+      <%= button_to 'destroy room', room_path(@room), method: :delete, class: "tracking-wide inline-block mr-6 font-medium lowercase text-[#3185fc] hover:cursor-pointer hover:underline hover:text-[#36393b]" %>
     </div>
-    <%= link_to 'Back to rooms', rooms_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'back to rooms', rooms_path, class: "tracking-wide inline-block font-medium lowercase text-[#3185fc] hover:cursor-pointer hover:underline hover:text-[#36393b]" %>
     <%= render "message", room: @room %>
   </div>
 </div>
