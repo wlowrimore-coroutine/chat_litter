@@ -1,12 +1,18 @@
-
-<div class="container">
-  <div class="w-full flex justify-center">
-    <h1 class="text-6xl text-[#36393b] items-center">Chat Litter</h1>
-  </div>
-  <div class="w-full flex justify-center">  
-    <% if current_user %>
-    <h1 class="text-md text-gray-800 tracking-wider">welcome<span class="ml-1 px-1 text-purple-500 font-semibold lowercase"><%= current_user.username %></span></h1>
-    <% end %>
+<div class="mx-auto md:w-2/3 w-full flex">
+  <div class="mx-auto">
+    <div class="container">
+      <% if notice.present? %>
+            <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
+          <% end %>
+      <div class="w-full flex justify-center">
+        <h1 class="text-6xl text-[#36393b] items-center">Chat Litter</h1>
+      </div>
+      <div class="w-full flex justify-center">  
+        <% if current_user %>
+        <h1 class="text-md text-gray-800 tracking-wider">welcome<span class="ml-1 px-1 text-purple-500 font-semibold lowercase"><%= current_user.username %></span></h1>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>
         
